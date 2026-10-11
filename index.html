@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasaan Kiani — Official Artist Website</title>
+<meta name="description" content="Hasaan Kiani is an 18-year-old independent musician, songwriter and self-producing recording artist from Kamra, Pakistan. An independent sound. A world of his own.">
+<meta name="theme-color" content="#070707">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hasaan Kiani — Official Artist Website">
+<meta property="og:description" content="Independent artist · Music producer. Written, shaped, and produced through his own vision.">
+<meta property="og:image" content="https://picsum.photos/seed/hk-og/1200/630.jpg">
+<meta property="og:image:alt" content="Hasaan Kiani — official artist artwork">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hasaan Kiani — Official Artist Website">
+<meta name="twitter:description" content="Independent artist · Music producer. An independent sound. A world of my own.">
+
+<!-- Favicon : HK monogram -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%23070707'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='26' font-style='italic' fill='%23EDEBE6' text-anchor='middle'%3EHK%3C/text%3E%3Ccircle cx='50' cy='16' r='3' fill='%23C2402D'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Fraunces:ital,opsz,wght@1,9..144,300..700&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MusicGroup","name":"Hasaan Kiani","description":"18-year-old independent musician, songwriter and self-producing recording artist from Kamra, Pakistan.","sameAs":["https://www.instagram.com/hasaan.kiani/"]}
+</script>
+
+<style>
+/* ================= Base ================= */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#070707; --bg2:#0B0B0B; --bg3:#101010;
+  --white:#EDEBE6; --silver:#A6A29A; --dim:#6E6A63;
+  --red:#C2402D;
+  --line:rgba(237,235,230,.10); --line2:rgba(237,235,230,.22);
+  --ease:cubic-bezier(.22,1,.36,1); --ease-io:cubic-bezier(.76,0,.24,1);
+  --f-d:'Archivo',ui-sans-serif,sans-serif;
+  --f-b:'Manrope',ui-sans-serif,sans-serif;
+  --f-s:'Fraunces',Georgia,serif;
+}
+html{scroll-behavior:smooth;scroll-padding-top:92px;color-scheme:dark}
+html,body{overflow-x:hidden}
+body{background:var(--bg);color:var(--white);font-family:var(--f-b);font-weight:400;
+  -webkit-font-smoothing:antialiased;line-height:1.6}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#242220;border-radius:8px}
+.lucide{width:1em;height:1em;stroke-width:1.75}
+.skip{position:fixed;top:-60px;left:16px;z-index:4000;background:var(--white);color:#000;
+  padding:12px 20px;font:600 12px var(--f-b);letter-spacing:.12em;transition:top .3s}
+.skip:focus{top:16px}
+
+.container{width:100%;max-width:1480px;margin-inline:auto;padding-inline:clamp(20px,4.5vw,72px)}
+.sec{padding-block:clamp(96px,12vw,176px);position:relative}
+.sec-alt{background:var(--bg2);border-block:1px solid var(--line)}
+
+/* Grain */
+.grain{position:fixed;inset:-60%;width:220%;height:220%;pointer-events:none;z-index:1500;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 9s steps(10) infinite}
+@keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-2%)}80%{transform:translate(3%,2%)}}
+
+/* Progress */
+.progress{position:fixed;top:0;left:0;width:100%;height:2px;background:var(--red);
+  transform:scaleX(0);transform-origin:0 0;z-index:1200}
+
+/* ================= Section heads & titles ================= */
+.sec-head{display:flex;align-items:center;gap:clamp(12px,1.6vw,20px)}
+.sh-num{font:600 12px/1 var(--f-b);color:var(--red);letter-spacing:.12em}
+.sh-tag{font:600 11px var(--f-b);letter-spacing:.28em;text-transform:uppercase;color:var(--silver)}
+.sh-line{flex:1;height:1px;background:var(--line)}
+.sh-note{font:500 10px var(--f-b);letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+.t-xl{font-family:var(--f-d);font-variation-settings:'wght' 560,'wdth' 86;
+  font-size:clamp(2.4rem,5.6vw,5rem);line-height:1.04;letter-spacing:-.015em;
+  margin-top:clamp(28px,4vw,46px)}
+.t-xl em{font-family:var(--f-s);font-style:italic;font-weight:420;color:var(--red);letter-spacing:0}
+[data-reveal]{opacity:0;transform:translateY(34px);
+  transition:opacity .95s var(--ease),transform .95s var(--ease)}
+[data-reveal].in-view{opacity:1;transform:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.wi{display:inline-block;transform:translateY(115%);transition:transform .9s var(--ease)}
+[data-words].in-view .wi{transform:none}
+.wi.em{font-family:var(--f-s);font-style:italic;font-weight:420;color:var(--red)}
+
+/* Image frames : curtain reveal + parallax */
+.frame{overflow:hidden;background:var(--bg3);position:relative}
+.frame img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.82) contrast(1.08);
+  transform:scale(1.12);will-change:transform}
+[data-pcurve]{clip-path:inset(0 0 100% 0);transition:clip-path 1.15s var(--ease)}
+[data-pcurve].in-view{clip-path:inset(0 0 0 0)}
+[data-pcurve].in-view img{transform:scale(1.02)}
+
+/* ================= Buttons ================= */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:18px 30px;border:1px solid transparent;
+  font:700 11px var(--f-b);letter-spacing:.24em;text-transform:uppercase;cursor:pointer;
+  transition:background .35s,color .35s,border-color .35s,transform .35s var(--ease)}
+.btn .lucide{font-size:14px}
+.btn-solid{background:var(--white);color:#070707}
+.btn-solid:hover{background:var(--red);color:#fff;transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line2);color:var(--white)}
+.btn-ghost:hover{border-color:var(--white);background:var(--white);color:#070707;transform:translateY(-2px)}
+.btn-sm{padding:14px 22px;font-size:10px;letter-spacing:.2em}
+
+/* ================= Preloader ================= */
+.preloader{position:fixed;inset:0;background:var(--bg);z-index:3000;display:flex;flex-direction:column;
+  padding:clamp(20px,4vw,56px);transition:transform .9s var(--ease-io) .1s}
+.preloader.done{transform:translateY(-101%)}
+.pre-center{margin:auto}
+.pre-name{overflow:hidden}
+.pre-name>span{display:inline-block;font:640 clamp(1.4rem,4vw,2.4rem)/1.1 var(--f-d);
+  font-variation-settings:'wght' 640,'wdth' 90;letter-spacing:.34em;text-transform:uppercase;
+  transform:translateY(115%);animation:rise .9s var(--ease) .1s forwards}
+.pre-name>span .i{font-family:var(--f-s);font-style:italic;color:var(--red);letter-spacing:.05em;
+  text-transform:none}
+.pre-line{margin-top:22px;height:1px;background:var(--line);position:relative;overflow:hidden}
+.pre-line i{position:absolute;inset:0;background:var(--red);transform:scaleX(0);transform-origin:0 0}
+.pre-foot{display:flex;justify-content:space-between;align-items:flex-end}
+.pre-foot small{font:600 10px var(--f-b);letter-spacing:.3em;text-transform:uppercase;color:var(--dim)}
+.pre-count{font:300 clamp(2.4rem,6vw,4rem)/1 var(--f-d);color:var(--red);font-variant-numeric:tabular-nums}
+@keyframes rise{to{transform:translateY(0)}}
+
+/* ================= Nav ================= */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;
+  justify-content:space-between;gap:24px;padding:24px clamp(20px,4vw,64px);
+  transition:padding .4s var(--ease),background .4s,border-color .4s;border-bottom:1px solid transparent}
+.nav.scrolled{padding-block:14px;background:rgba(7,7,7,.78);backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:12px;font:700 13px var(--f-b);letter-spacing:.32em;
+  text-transform:uppercase}
+.brand i.dotr{width:6px;height:6px;border-radius:50%;background:var(--red);flex:none}
+.nav-links{display:flex;gap:clamp(20px,2.6vw,38px)}
+.nav-links a{position:relative;font:600 11px var(--f-b);letter-spacing:.2em;text-transform:uppercase;
+  color:var(--silver);padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--white)}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--red);
+  transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1);transform-origin:left}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-cta{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line2);border-radius:999px;
+  padding:12px 22px;font:700 10px var(--f-b);letter-spacing:.22em;text-transform:uppercase;
+  transition:background .35s,color .35s,border-color .35s}
+.nav-cta:hover{background:var(--white);color:#070707;border-color:var(--white)}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--line2);border-radius:50%;
+  place-items:center;font-size:18px;transition:.3s;cursor:pointer}
+.burger:hover{border-color:var(--white)}
+
+/* Mobile menu */
+.mmenu{position:fixed;inset:0;background:var(--bg);z-index:2000;display:flex;flex-direction:column;
+  padding:clamp(20px,5vw,48px);transform:translateY(-102%);transition:transform .7s var(--ease-io);visibility:hidden}
+.mmenu.open{transform:none;visibility:visible}
+.mm-head{display:flex;justify-content:space-between;align-items:center}
+.mm-close{width:48px;height:48px;border:1px solid var(--line2);border-radius:50%;display:grid;
+  place-items:center;font-size:18px;transition:.3s;cursor:pointer}
+.mm-close:hover{background:var(--white);color:#070707}
+.mm-links{margin:auto 0;display:flex;flex-direction:column;gap:6px}
+.mm-links a{display:block}
+.mm-in{display:inline-flex;align-items:baseline;gap:18px;font-family:var(--f-d);
+  font-variation-settings:'wght' 560,'wdth' 86;font-size:clamp(2.4rem,9vw,4.4rem);line-height:1.15;
+  opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .6s var(--ease),color .3s}
+.mmenu.open .mm-in{opacity:1;transform:none;transition-delay:calc(.18s + var(--i)*.06s)}
+.mm-links a:hover .mm-in{color:var(--red)}
+.mm-num{font:600 11px var(--f-b);color:var(--red);letter-spacing:.15em}
+.mm-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  border-top:1px solid var(--line);padding-top:22px;font-size:13px;color:var(--dim)}
+.mm-foot a{display:inline-flex;align-items:center;gap:8px;color:var(--silver)}
+.mm-foot a:hover{color:var(--red)}
+
+/* ================= HERO ================= */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
+  overflow:hidden;padding-top:clamp(110px,15vh,160px)}
+.h-bg{position:absolute;inset:0;z-index:-2}
+.h-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.42) contrast(1.12)}
+body.loaded .h-bg img{animation:kb 22s var(--ease) forwards}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.1)}}
+.h-veil{position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(7,7,7,.6),rgba(7,7,7,.55) 40%,rgba(7,7,7,.9) 82%,var(--bg))}
+.h-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+  font:600 10px var(--f-b);letter-spacing:.3em;text-transform:uppercase;color:var(--silver)}
+.h-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--white)}
+.dotp{width:7px;height:7px;border-radius:50%;background:var(--red);position:relative;flex:none}
+.dotp::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--red);
+  animation:pulse 2.2s infinite}
+@keyframes pulse{0%{transform:scale(.4);opacity:1}100%{transform:scale(1.5);opacity:0}}
+
+.h-name{margin-block:auto;padding-block:clamp(20px,4vh,44px)}
+.hn-line{display:block;overflow:hidden;padding-bottom:.04em}
+.hn-word{display:inline-block;text-transform:uppercase;font-family:var(--f-d);
+  font-size:clamp(3.6rem,16.5vw,15.5rem);line-height:.94;letter-spacing:-.01em;white-space:nowrap}
+.hn-ch{display:inline-block;font-variation-settings:'wght' 620,'wdth' 78;transform:translateY(112%);
+  transition:transform 1s var(--ease) var(--d),font-variation-settings .12s linear}
+body.loaded .hn-ch{transform:translateY(0)}
+
+.h-head{font-family:var(--f-d);font-variation-settings:'wght' 340,'wdth' 95;
+  font-size:clamp(1.55rem,3.2vw,2.7rem);line-height:1.25;letter-spacing:-.01em;max-width:22ch}
+.h-head em{font-family:var(--f-s);font-style:italic;font-weight:420;color:var(--red)}
+.h-sub{margin-top:14px;color:var(--silver);font-size:15.5px;max-width:44ch}
+.h-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:clamp(28px,4vh,44px)}
+.h-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;
+  padding-bottom:clamp(30px,5vh,52px)}
+.h-scroll{display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--dim);
+  font:600 9px var(--f-b);letter-spacing:.34em;text-transform:uppercase}
+.h-scroll .line{width:1px;height:56px;background:var(--line2);position:relative;overflow:hidden}
+.h-scroll .line::after{content:'';position:absolute;left:0;top:-40%;width:100%;height:40%;
+  background:var(--red);animation:drop 2s var(--ease-io) infinite}
+@keyframes drop{to{top:110%}}
+.h-top,.h-head,.h-sub,.h-actions,.h-scroll{opacity:0;transform:translateY(18px);
+  transition:opacity .9s var(--ease) 1.15s,transform .9s var(--ease) 1.15s}
+body.loaded :is(.h-top,.h-head,.h-sub,.h-actions,.h-scroll){opacity:1;transform:none}
+
+/* ================= Marquee ================= */
+.marquee{border-block:1px solid var(--line);padding-block:20px;overflow:hidden;margin-top:-1px}
+.mq-track{display:flex;width:max-content;will-change:transform;animation:mq 42s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-group{display:flex;align-items:center;gap:clamp(26px,3.4vw,52px);padding-right:clamp(26px,3.4vw,52px)}
+.mq-item{font:600 11px var(--f-b);letter-spacing:.32em;text-transform:uppercase;color:var(--silver);
+  white-space:nowrap}
+.mq-dot{width:5px;height:5px;background:var(--red);transform:rotate(45deg);flex:none}
+
+/* ================= Music ================= */
+.lp{margin-top:clamp(40px,5vw,64px);border:1px solid var(--line);background:var(--bg2);
+  display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,4vw,64px);
+  padding:clamp(26px,4vw,56px);align-items:center}
+.lp-tag{display:inline-flex;align-items:center;gap:14px;font:700 10px var(--f-b);letter-spacing:.3em;
+  text-transform:uppercase;color:var(--red)}
+.eq{display:inline-flex;align-items:flex-end;gap:3px;height:14px}
+.eq i{width:3px;background:var(--red);animation:eq 1.1s ease-in-out infinite}
+.eq i:nth-child(1){height:6px}.eq i:nth-child(2){height:13px;animation-delay:.15s}
+.eq i:nth-child(3){height:9px;animation-delay:.3s}.eq i:nth-child(4){height:12px;animation-delay:.45s}
+@keyframes eq{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+.lp-name{margin-top:20px;font-family:var(--f-d);font-variation-settings:'wght' 560,'wdth' 88;
+  font-size:clamp(1.5rem,2.6vw,2.3rem);line-height:1.15;letter-spacing:-.01em}
+.lp-sub{margin-top:14px;color:var(--silver);font-size:15px;max-width:42ch}
+.lp-right{display:flex;flex-direction:column;gap:22px}
+.lp-wave{position:relative;height:120px;border-block:1px solid var(--line)}
+.lp-wave canvas{position:absolute;inset:0;width:100%;height:100%;cursor:crosshair;display:block}
+.lp-right .btn{align-self:flex-start}
+.lp-embed iframe{width:100%;border:0;display:block}
+
+.rel-note{margin-top:clamp(48px,6vw,76px);display:flex;align-items:center;gap:18px;
+  font:600 10px var(--f-b);letter-spacing:.26em;text-transform:uppercase;color:var(--dim)}
+.rel-note::after{content:'';flex:1;height:1px;background:var(--line)}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,2.4vw,30px);
+  margin-top:clamp(28px,3.5vw,44px)}
+.rcard{border:1px solid var(--line);background:var(--bg2);display:flex;flex-direction:column;
+  /* FIX: reveal ke opacity transition ko preserve karte hue hover transform */
+  transition:opacity .95s var(--ease),transform .5s var(--ease),border-color .4s,background .4s}
+.rcard:hover{transform:translateY(-6px);border-color:var(--line2);background:var(--bg3)}
+.rc-cover{aspect-ratio:1/1;overflow:hidden;border-bottom:1px solid var(--line);position:relative}
+.rc-cover svg,.rc-cover img{width:100%;height:100%;display:block}
+.rc-cover .rc-img{position:absolute;inset:0;object-fit:cover}
+.rc-cover .vinyl{transform-box:fill-box;transform-origin:50% 50%}
+.rcard:hover .rc-cover .vinyl{animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rc-body{padding:clamp(18px,2vw,26px);display:flex;flex-direction:column;gap:8px;flex:1}
+.rc-cat{font:700 10px var(--f-b);letter-spacing:.3em;color:var(--red)}
+.rc-title{font-family:var(--f-d);font-variation-settings:'wght' 560,'wdth' 86;
+  font-size:clamp(1.3rem,1.8vw,1.7rem);line-height:1.15;letter-spacing:-.01em}
+.rc-meta{font:600 10px var(--f-b);letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+.rc-actions{margin-top:auto;padding-top:18px;display:flex;align-items:center;gap:12px}
+.rc-listen{display:inline-flex;align-items:center;gap:10px;font:700 10px var(--f-b);
+  letter-spacing:.22em;text-transform:uppercase;border:1px solid var(--line2);padding:13px 20px;
+  transition:background .3s,color .3s,border-color .3s}
+.rc-listen:hover{background:var(--white);color:#070707;border-color:var(--white)}
+.rc-yt{width:44px;height:44px;border:1px solid var(--line2);border-radius:50%;display:grid;
+  place-items:center;font-size:15px;color:var(--silver);transition:.3s}
+.rc-yt:hover{color:#fff;border-color:#fff}
+.rel-foot{margin-top:clamp(32px,4vw,48px);display:flex;justify-content:center}
+
+/* ================= About ================= */
+.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(44px,6vw,110px);
+  align-items:start;margin-top:clamp(44px,6vw,80px)}
+.about-media{position:relative;max-width:520px}
+.about-media::after{content:'';position:absolute;inset:0;transform:translate(18px,18px);
+  border:1px solid var(--line2);z-index:-1;pointer-events:none}
+.about-media .frame{aspect-ratio:4/5}
+.about-media figcaption{margin-top:16px;font:600 10px var(--f-b);letter-spacing:.26em;
+  text-transform:uppercase;color:var(--dim)}
+.about-lede{font-family:var(--f-d);font-variation-settings:'wght' 380,'wdth' 94;
+  font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.5;letter-spacing:-.005em}
+.about-more{margin-top:26px;color:var(--silver);font-size:16px;line-height:1.8;max-width:58ch}
+.about-quote{margin-top:clamp(30px,4vw,44px);padding-left:24px;border-left:2px solid var(--red);
+  font-family:var(--f-s);font-style:italic;font-weight:400;font-size:clamp(1.15rem,1.9vw,1.5rem);
+  line-height:1.5;max-width:30ch;color:var(--white)}
+.facts{list-style:none;margin-top:clamp(32px,4vw,48px)}
+.facts li{display:flex;align-items:baseline;justify-content:space-between;gap:20px;
+  padding:16px 2px;border-top:1px solid var(--line)}
+.facts li:last-child{border-bottom:1px solid var(--line)}
+.facts b{font:700 10px var(--f-b);letter-spacing:.28em;text-transform:uppercase;color:var(--dim)}
+.facts span{font-family:var(--f-d);font-variation-settings:'wght' 520,'wdth' 88;font-size:17px}
+
+/* ================= Process ================= */
+.proc-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(44px,6vw,100px);
+  margin-top:clamp(44px,6vw,80px);align-items:start}
+.proc-list{border-bottom:1px solid var(--line)}
+.proc-tab{width:100%;text-align:left;display:grid;grid-template-columns:56px 1fr;gap:clamp(14px,2vw,24px);
+  padding:clamp(22px,3vw,30px) 0;border-top:1px solid var(--line);opacity:.42;
+  transition:opacity .4s;cursor:pointer}
+.proc-tab:hover{opacity:.75}
+.proc-tab.active{opacity:1}
+.pt-num{font:700 11px var(--f-b);color:var(--red);letter-spacing:.14em;padding-top:8px}
+.pt-title{display:block;font-family:var(--f-d);font-variation-settings:'wght' 560,'wdth' 86;
+  font-size:clamp(1.4rem,2.4vw,2.1rem);line-height:1.1;letter-spacing:-.01em;text-transform:uppercase}
+.pt-desc{display:block;margin-top:10px;color:var(--silver);font-size:15px;line-height:1.75;max-width:52ch}
+.pt-img{display:none;margin-top:18px;aspect-ratio:16/10;overflow:hidden}
+.pt-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.8) contrast(1.08)}
+/* FIX: mobile par sirf ACTIVE stage ki image dikhe */
+.proc-tab.active .pt-img{display:block}
+.proc-visual{position:sticky;top:104px}
+.pv-stage{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--bg3)}
+.pv-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) brightness(.6) contrast(1.1);opacity:0;transform:scale(1.06);
+  transition:opacity .8s var(--ease),transform 1.4s var(--ease)}
+.pv-stage img.active{opacity:1;transform:scale(1)}
+.pv-chip{position:absolute;left:22px;bottom:22px;background:rgba(7,7,7,.72);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid var(--line2);padding:12px 18px;font:700 10px var(--f-b);letter-spacing:.26em;
+  text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.pv-chip b{color:var(--red)}
+.proc-count{font:700 11px var(--f-b);letter-spacing:.24em;color:var(--dim);margin-bottom:14px}
+.proc-count b{color:var(--red)}
+
+/* ================= Gallery ================= */
+.gal-grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(18px,2.4vw,40px);
+  row-gap:clamp(48px,6vw,90px);margin-top:clamp(44px,6vw,80px)}
+.gitem{cursor:pointer;position:relative}
+.gitem .frame img{transition:transform 1.1s var(--ease),filter .6s}
+.gitem:hover .frame img{transform:scale(1.07)!important;filter:grayscale(1) brightness(1) contrast(1.1)}
+.gcap{display:flex;align-items:center;gap:14px;margin-top:14px}
+.gcap b{font:700 10px var(--f-b);color:var(--red);letter-spacing:.2em}
+.gcap span{font:600 10px var(--f-b);letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+.gcap .garr{margin-left:auto;width:34px;height:34px;border:1px solid var(--line2);border-radius:50%;
+  display:grid;place-items:center;font-size:13px;opacity:0;transform:translateY(6px);
+  transition:.35s var(--ease);color:var(--white)}
+.gitem:hover .garr{opacity:1;transform:none}
+@media(hover:none){.garr{opacity:1;transform:none}}
+.r1610{aspect-ratio:16/10}.r45{aspect-ratio:4/5}.r34{aspect-ratio:3/4}.r169{aspect-ratio:16/9}.r43{aspect-ratio:4/3}
+@media(min-width:901px){
+  .gitem:nth-child(6n+1){grid-column:1/8}
+  .gitem:nth-child(6n+2){grid-column:9/13;margin-top:90px}
+  .gitem:nth-child(6n+3){grid-column:2/7;margin-top:50px}
+  .gitem:nth-child(6n+4){grid-column:8/13}
+  .gitem:nth-child(6n+5){grid-column:1/7}
+  .gitem:nth-child(6n+6){grid-column:8/13;margin-top:110px}
+}
+@media(max-width:900px){
+  .gitem{grid-column:1/13}
+  .gitem:nth-child(even){width:88%;margin-left:auto}
+}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(4,4,4,.97);z-index:2500;display:flex;align-items:center;
+  justify-content:center;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s}
+.lightbox.open{opacity:1;visibility:visible}
+.lb-fig{max-width:min(1100px,88vw);margin:0 24px}
+.lb-fig img{max-width:100%;max-height:72vh;margin-inline:auto;object-fit:contain;border:1px solid var(--line);
+  filter:grayscale(1) brightness(.9) contrast(1.08);transform:scale(.96);transition:transform .5s var(--ease),opacity .3s}
+.lightbox.open .lb-fig img{transform:none}
+.lb-fig img.is-loading{opacity:.3}
+.lb-cap{margin-top:16px;text-align:center;font:600 11px var(--f-b);letter-spacing:.26em;
+  text-transform:uppercase;color:var(--silver)}
+.lb-close{position:absolute;top:22px;right:22px;width:50px;height:50px;border:1px solid var(--line2);
+  border-radius:50%;display:grid;place-items:center;font-size:18px;transition:.3s;cursor:pointer}
+.lb-close:hover{background:var(--white);color:#070707}
+.lb-idx{position:absolute;top:36px;left:32px;font:600 12px var(--f-b);letter-spacing:.24em;
+  color:var(--dim);font-variant-numeric:tabular-nums}
+.lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;
+  border:1px solid var(--line2);border-radius:50%;display:grid;place-items:center;font-size:18px;
+  transition:.3s;z-index:2;cursor:pointer}
+.lb-prev{left:24px}.lb-next{right:24px}
+.lb-prev:hover,.lb-next:hover{background:var(--white);color:#070707}
+
+/* ================= Follow ================= */
+.fl-rows{margin-top:clamp(40px,5vw,64px);border-bottom:1px solid var(--line)}
+.fl-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(18px,3vw,40px);
+  border-top:1px solid var(--line);padding:clamp(28px,4vw,44px) clamp(16px,3vw,36px);
+  margin-inline:calc(-1*clamp(16px,3vw,36px));transition:background .4s,color .4s}
+.fl-row:hover{background:var(--white);color:#070707}
+.fl-tag{font:700 10px var(--f-b);letter-spacing:.28em;text-transform:uppercase;color:var(--red)}
+.fl-main{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fl-big{font-family:var(--f-d);font-variation-settings:'wght' 560,'wdth' 86;
+  font-size:clamp(1.5rem,3.6vw,2.9rem);line-height:1.1;letter-spacing:-.01em}
+.fl-sub{font-size:14px;color:var(--dim);transition:color .4s}
+.fl-row:hover .fl-sub{color:#55524C}
+.fl-arr{width:clamp(48px,5vw,62px);height:clamp(48px,5vw,62px);border:1px solid var(--line2);
+  border-radius:50%;display:grid;place-items:center;font-size:19px;transition:.4s var(--ease)}
+.fl-row:hover .fl-arr{border-color:#070707;transform:rotate(45deg)}
+.fl-note{margin-top:22px;font-size:13px;color:var(--dim);text-align:center}
+
+/* ================= Contact ================= */
+.c-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(48px,7vw,120px);
+  margin-top:clamp(44px,6vw,80px)}
+.c-info>p{color:var(--silver);font-size:16px;line-height:1.8;max-width:46ch}
+.c-email{display:flex;align-items:center;gap:16px;margin-top:clamp(28px,3.5vw,42px);flex-wrap:wrap}
+.c-mail{font-family:var(--f-s);font-style:italic;font-weight:420;font-size:clamp(1.2rem,2.3vw,1.7rem);
+  border-bottom:1px solid var(--line2);padding-bottom:6px;transition:color .3s,border-color .3s;
+  word-break:break-all}
+.c-mail:hover{color:var(--red);border-color:var(--red)}
+.c-copy{width:46px;height:46px;border:1px solid var(--line2);border-radius:50%;display:grid;
+  place-items:center;font-size:15px;transition:.3s;cursor:pointer}
+.c-copy:hover{background:var(--white);color:#070707}
+.c-meta{list-style:none;margin-top:clamp(28px,3.5vw,42px)}
+.c-meta li{display:flex;align-items:center;gap:14px;padding:13px 0;border-top:1px solid var(--line);
+  font-size:14px;color:var(--silver)}
+.c-meta li:last-child{border-bottom:1px solid var(--line)}
+.c-meta .lucide{color:var(--red);font-size:16px;flex:none}
+.c-meta a:hover{color:var(--white)}
+
+.c-form .f-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px)}
+.field{display:flex;flex-direction:column;gap:9px;margin-bottom:clamp(18px,2.4vw,26px)}
+.field label{font:700 10px var(--f-b);letter-spacing:.26em;text-transform:uppercase;color:var(--dim)}
+.field input,.field textarea,.field select{background:transparent;border:0;
+  border-bottom:1px solid var(--line2);padding:12px 2px;color:var(--white);font:400 16px var(--f-b);
+  border-radius:0;appearance:none;-webkit-appearance:none;width:100%;transition:border-color .3s}
+.field select{cursor:pointer}
+.field select option{background:#111;color:var(--white)}
+.field textarea{resize:vertical;min-height:100px}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--red)}
+.field ::placeholder{color:#4A4741}
+.sel{position:relative}
+.sel-ic{position:absolute;right:2px;bottom:14px;pointer-events:none;color:var(--dim);font-size:15px}
+.f-err{font-size:12px;color:var(--red);min-height:0}
+.field.invalid input,.field.invalid textarea{border-color:var(--red)}
+.f-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:6px}
+.f-note2{margin-top:20px;font-size:13px;color:var(--dim);line-height:1.7;
+  border-left:2px solid var(--line2);padding-left:14px;max-width:52ch}
+
+.compose{display:none;margin-top:24px;border:1px solid var(--line2);background:var(--bg3);padding:24px}
+.compose.show{display:block;animation:cin .5s var(--ease)}
+@keyframes cin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.compose h4{font:700 10px var(--f-b);letter-spacing:.3em;text-transform:uppercase;color:var(--red)}
+.compose p{margin-top:12px;font-size:14px;color:var(--silver);line-height:1.7}
+.compose-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+
+/* ================= Footer ================= */
+.footer{border-top:1px solid var(--line);padding:clamp(70px,9vw,120px) 0 36px;text-align:center}
+.f-mark{font-family:var(--f-d);font-variation-settings:'wght' 640,'wdth' 84;
+  font-size:clamp(2.4rem,11vw,12rem);line-height:.95;letter-spacing:-.02em;text-transform:uppercase;
+  white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(237,235,230,.26);
+  user-select:none;transition:color .5s}
+.f-mark:hover{color:rgba(237,235,230,.07)}
+.f-tag{margin-top:22px;font:700 10px var(--f-b);letter-spacing:.4em;text-transform:uppercase;color:var(--dim)}
+.f-links{display:flex;justify-content:center;gap:clamp(20px,4vw,44px);margin-top:clamp(30px,4vw,44px);flex-wrap:wrap}
+.f-links a{display:inline-flex;align-items:center;gap:9px;font:600 11px var(--f-b);letter-spacing:.24em;
+  text-transform:uppercase;color:var(--silver);transition:color .3s}
+.f-links a:hover{color:var(--red)}
+.f-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  border-top:1px solid var(--line);margin-top:clamp(44px,6vw,70px);padding-top:26px;font-size:12.5px;color:var(--dim)}
+.f-top{display:inline-flex;align-items:center;gap:9px;font:700 10px var(--f-b);letter-spacing:.24em;
+  text-transform:uppercase;color:var(--silver);transition:color .3s;cursor:pointer}
+.f-top:hover{color:var(--red)}
+.f-top .lucide{transition:transform .35s var(--ease)}
+.f-top:hover .lucide{transform:translateY(-4px)}
+
+/* Toasts */
+.toasts{position:fixed;right:18px;bottom:18px;z-index:4000;display:flex;flex-direction:column;gap:10px}
+.toast{display:flex;align-items:center;gap:12px;background:var(--bg3);border:1px solid var(--line2);
+  border-left:3px solid var(--red);padding:14px 20px;font-size:14px;max-width:min(360px,86vw);
+  box-shadow:0 18px 44px rgba(0,0,0,.6);opacity:0;transform:translateY(14px);transition:.45s var(--ease)}
+.toast.show{opacity:1;transform:none}
+.toast .lucide{color:var(--red);font-size:18px;flex:none}
+
+/* ================= Responsive ================= */
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:grid}
+  .about-grid,.proc-grid,.c-grid,.lp{grid-template-columns:1fr}
+  .proc-visual{display:none}
+  .about-media{max-width:440px}
+  .f-row{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .h-bottom{flex-direction:column;align-items:flex-start}
+  .h-scroll{flex-direction:row}
+  .h-scroll .line{width:56px;height:1px}
+  .h-scroll .line::after{animation:none;width:40%;height:100%;top:0;left:-40%}
+  .lb-prev{left:12px}.lb-next{right:12px;top:auto;bottom:20px;transform:none}
+  .lb-fig{margin-bottom:56px}
+  .f-bottom{justify-content:center;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  [data-reveal],[data-words],.h-top,.h-head,.h-sub,.h-actions,.h-scroll{opacity:1!important;transform:none!important}
+  .wi,.hn-ch{transform:none!important}
+  [data-pcurve]{clip-path:none!important}
+  .frame img{transform:none!important}
+}
+</style>
+</head>
+<body class="lock">
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-name"><span>HASAAN&nbsp;KIANI&nbsp;<span class="i">HK</span></span></div>
+    <div class="pre-line"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-foot">
+    <small>Independent by nature</small>
+    <span class="pre-count" id="preCount">00</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><i class="dotr" aria-hidden="true"></i>HASAAN KIANI</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#music" data-spy>Music</a>
+    <a href="#about" data-spy>About</a>
+    <a href="#process" data-spy>Process</a>
+    <a href="#gallery" data-spy>Gallery</a>
+    <a href="#contact" data-spy>Contact</a>
+  </nav>
+  <div class="nav-right">
+    <a class="nav-cta" data-link="spotifySearch" target="_blank" rel="noopener">Listen <i data-lucide="play"></i></a>
+    <button class="burger" id="burger" aria-label="Open menu"><i data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <div class="mm-head">
+    <span class="brand"><i class="dotr" aria-hidden="true"></i>HASAAN KIANI</span>
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><i data-lucide="x"></i></button>
+  </div>
+  <nav class="mm-links" aria-label="Mobile">
+    <a href="#music"><span class="mm-in" style="--i:0"><span class="mm-num">01</span>Music</span></a>
+    <a href="#about"><span class="mm-in" style="--i:1"><span class="mm-num">02</span>About</span></a>
+    <a href="#process"><span class="mm-in" style="--i:2"><span class="mm-num">03</span>Process</span></a>
+    <a href="#gallery"><span class="mm-in" style="--i:3"><span class="mm-num">04</span>Gallery</span></a>
+    <a href="#contact"><span class="mm-in" style="--i:4"><span class="mm-num">05</span>Contact</span></a>
+  </nav>
+  <div class="mm-foot">
+    <a data-link="instagram" target="_blank" rel="noopener">@hasaan.kiani <i data-lucide="arrow-up-right"></i></a>
+    <span>Kamra, Pakistan</span>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="h-bg" aria-hidden="true">
+    <!-- EDIT: replace with a real cinematic photo of Hasaan -->
+    <img src="https://picsum.photos/seed/hk-hero/1920/1080.jpg" alt="" fetchpriority="high" decoding="async">
+  </div>
+  <div class="h-veil" aria-hidden="true"></div>
+
+  <div class="h-top container">
+    <span class="h-kicker"><span class="dotp" aria-hidden="true"></span>Independent Artist · Music Producer</span>
+    <span>Kamra, Pakistan</span>
+  </div>
+
+  <h1 class="h-name container" aria-label="Hasaan Kiani">
+    <span class="hn-line" aria-hidden="true"><span class="hn-word">HASAAN</span></span>
+    <span class="hn-line" aria-hidden="true"><span class="hn-word">KIANI</span></span>
+  </h1>
+
+  <div class="h-bottom container">
+    <div>
+      <p class="h-head">An independent sound.<br>A world of <em>my own.</em></p>
+      <p class="h-sub">Written, shaped, and produced through my own vision.</p>
+      <div class="h-actions">
+        <a class="btn btn-solid" href="#music">Listen to my music <i data-lucide="arrow-down"></i></a>
+        <a class="btn btn-ghost" href="#about">Explore my world</a>
+      </div>
+    </div>
+    <div class="h-scroll" aria-hidden="true"><span>Scroll</span><span class="line"></span></div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack"></div></div>
+
+<!-- ================= MUSIC ================= -->
+<section class="sec" id="music">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="sh-num">( 01 )</span><span class="sh-tag">Music</span>
+      <span class="sh-line"></span><span class="sh-note">Written · Produced · Released — independently</span>
+    </div>
+    <h2 class="t-xl" data-reveal data-delay="0.06">Made alone.<br><em>Meant for you.</em></h2>
+
+    <div class="lp" data-reveal data-delay="0.1">
+      <div class="lp-left">
+        <span class="lp-tag"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Official audio</span>
+        <p class="lp-name">Hasaan Kiani — on Spotify</p>
+        <p class="lp-sub">Every release, single and cover — collected in one place as it goes live.
+          Search the name, press play, and take the sound with you.</p>
+      </div>
+      <div class="lp-right">
+        <div id="lpSlot">
+          <div class="lp-wave"><canvas id="wave" aria-hidden="true"></canvas></div>
+          <a class="btn btn-solid" data-link="spotifySearch" target="_blank" rel="noopener">
+            Open in Spotify <i data-lucide="external-link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rel-note" data-reveal><span>Catalogue — 2025</span></div>
+    <div class="rel-grid" id="relGrid"><!-- built from CONFIG.releases --></div>
+
+    <p class="fl-note" data-reveal>Catalogue is being prepared — each slot connects directly to Spotify the moment a release goes live. Nothing here pretends to play.</p>
+
+    <div class="rel-foot" data-reveal>
+      <a class="btn btn-ghost" data-link="spotifySearch" target="_blank" rel="noopener">
+        Listen on Spotify <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec sec-alt" id="about">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="sh-num">( 02 )</span><span class="sh-tag">About</span>
+      <span class="sh-line"></span><span class="sh-note">Kamra, Pakistan</span>
+    </div>
+    <h2 class="t-xl" data-reveal data-delay="0.06">The person behind<br><em>the sound.</em></h2>
+
+    <div class="about-grid">
+      <figure class="about-media" data-reveal>
+        <div class="frame" data-pcurve data-parallax="0.09">
+          <!-- EDIT: replace with a real portrait of Hasaan -->
+          <img src="https://picsum.photos/seed/hk-portrait/900/1150.jpg" alt="Hasaan Kiani — artist portrait" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Hasaan Kiani — Kamra, Pakistan</figcaption>
+      </figure>
+
+      <div>
+        <p class="about-lede" data-words>I'm Hasaan Kiani — an 18-year-old independent music creator from Kamra, Pakistan. No label, no team, no formula. Just a young artist building a sound of his own, <em>one honest record at a time.</em></p>
+        <p class="about-more" data-reveal>I write my own words, shape my own melodies and produce my own records.
+          Every idea starts small — a voice memo, a line in a notebook — and grows at its own pace,
+          through late nights, trial, error and constant experimentation.</p>
+        <p class="about-more" data-reveal data-delay="0.08">Independence isn't a limitation to me; it's the whole point.
+          It means every sound you hear from me is genuinely mine — learned, made and finished by hand.</p>
+
+        <blockquote class="about-quote" data-reveal data-delay="0.12">"I'd rather release one record that's completely true to me than a hundred that aren't."</blockquote>
+
+        <ul class="facts">
+          <li data-reveal><b>Age</b><span>18</span></li>
+          <li data-reveal data-delay="0.05"><b>Base</b><span>Kamra, Pakistan</span></li>
+          <li data-reveal data-delay="0.1"><b>Role</b><span>Artist · Writer · Producer</span></li>
+          <li data-reveal data-delay="0.15"><b>Status</b><span>Fully independent</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="sh-num">( 03 )</span><span class="sh-tag">The Process</span>
+      <span class="sh-line"></span><span class="sh-note">Creative approach</span>
+    </div>
+    <h2 class="t-xl" data-reveal data-delay="0.06">From an idea<br><em>to a sound.</em></h2>
+
+    <div class="proc-grid">
+      <div>
+        <p class="proc-count" data-reveal><b id="procIdx">01</b> / 04</p>
+        <div class="proc-list" id="procList" role="tablist" aria-label="Creative process stages" data-reveal>
+          <button class="proc-tab active" role="tab" aria-selected="true" data-stage="0">
+            <span class="pt-num">01</span>
+            <span><span class="pt-title">The Idea</span>
+              <span class="pt-desc">Every record begins as a feeling — a melody hummed into a voice memo, a line scribbled at 2am. I never force it. I wait until an idea is strong enough to lead.</span>
+              <span class="pt-img"><img src="https://picsum.photos/seed/hk-idea/1200/750.jpg" alt="The idea — creative sketch moment" loading="lazy"></span>
+            </span>
+          </button>
+          <button class="proc-tab" role="tab" aria-selected="false" data-stage="1">
+            <span class="pt-num">02</span>
+            <span><span class="pt-title">Writing</span>
+              <span class="pt-desc">Melody and words grow together. I rewrite until the lyrics stop sounding written — until they sound like something I've always meant to say.</span>
+              <span class="pt-img"><img src="https://picsum.photos/seed/hk-writing/1200/750.jpg" alt="Writing — lyrics and melody" loading="lazy"></span>
+            </span>
+          </button>
+          <button class="proc-tab" role="tab" aria-selected="false" data-stage="2">
+            <span class="pt-num">03</span>
+            <span><span class="pt-title">Production</span>
+              <span class="pt-desc">This is where the world gets built. Layers, textures, space and silence — every element placed by ear, changed, broken and rebuilt until the atmosphere feels right.</span>
+              <span class="pt-img"><img src="https://picsum.photos/seed/hk-production/1200/750.jpg" alt="Production — building the track" loading="lazy"></span>
+            </span>
+          </button>
+          <button class="proc-tab" role="tab" aria-selected="false" data-stage="3">
+            <span class="pt-num">04</span>
+            <span><span class="pt-title">The Final Sound</span>
+              <span class="pt-desc">When the record finally sounds like me — not an influence, not a trend — it's ready. A private idea becomes a sound anyone can live inside.</span>
+              <span class="pt-img"><img src="https://picsum.photos/seed/hk-final/1200/750.jpg" alt="The final sound — finished record" loading="lazy"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="proc-visual" id="procVisual" data-reveal data-delay="0.1" aria-live="polite">
+        <div class="pv-stage">
+          <!-- EDIT: replace with real studio / process photos -->
+          <img src="https://picsum.photos/seed/hk-idea/1200/900.jpg" alt="" loading="lazy">
+          <img src="https://picsum.photos/seed/hk-writing/1200/900.jpg" alt="" loading="lazy">
+          <img src="https://picsum.photos/seed/hk-production/1200/900.jpg" alt="" loading="lazy">
+          <img src="https://picsum.photos/seed/hk-final/1200/900.jpg" alt="" loading="lazy">
+          <span class="pv-chip"><b id="pvNum">01</b><span id="pvName">The Idea</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="sec sec-alt" id="gallery">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="sh-num">( 04 )</span><span class="sh-tag">Gallery</span>
+      <span class="sh-line"></span><span class="sh-note">Portraits · Studio · Experiments</span>
+    </div>
+    <h2 class="t-xl" data-reveal data-delay="0.06">A visual<br><em>archive.</em></h2>
+
+    <div class="gal-grid">
+      <!-- EDIT: replace all images with real photographs of Hasaan -->
+      <figure class="gitem" role="button" tabindex="0" data-reveal
+        data-full="https://picsum.photos/seed/hk-g1/1600/1000.jpg" data-cap="Portrait — 01">
+        <div class="frame r1610" data-pcurve><img src="https://picsum.photos/seed/hk-g1/1400/875.jpg" alt="Artist portrait" loading="lazy"></div>
+        <figcaption class="gcap"><b>01</b><span>Portrait</span><span class="garr"><i data-lucide="arrow-up-right"></i></span></figcaption>
+      </figure>
+      <figure class="gitem" role="button" tabindex="0" data-reveal data-delay="0.07"
+        data-full="https://picsum.photos/seed/hk-g2/1200/1500.jpg" data-cap="Studio moment — 02">
+        <div class="frame r45" data-pcurve><img src="https://picsum.photos/seed/hk-g2/900/1125.jpg" alt="Studio moment" loading="lazy"></div>
+        <figcaption class="gcap"><b>02</b><span>Studio moment</span><span class="garr"><i data-lucide="arrow-up-right"></i></span></figcaption>
+      </figure>
+      <figure class="gitem" role="button" tabindex="0" data-reveal
+        data-full="https://picsum.photos/seed/hk-g3/1200/1600.jpg" data-cap="Behind the scenes — 03">
+        <div class="frame r34" data-pcurve><img src="https://picsum.photos/seed/hk-g3/900/1200.jpg" alt="Behind the scenes" loading="lazy"></div>
+        <figcaption class="gcap"><b>03</b><span>Behind the scenes</span><span class="garr"><i data-lucide="arrow-up-right"></i></span></figcaption>
+      </figure>
+      <figure class="gitem" role="button" tabindex="0" data-reveal data-delay="0.07"
+        data-full="https://picsum.photos/seed/hk-g4/1600/900.jpg" data-cap="Cover concept — 04">
+        <div class="frame r169" data-pcurve><img src="https://picsum.photos/seed/hk-g4/1400/788.jpg" alt="Cover art concept" loading="lazy"></div>
+        <figcaption class="gcap"><b>04</b><span>Cover concept</span><span class="garr"><i data-lucide="arrow-up-right"></i></span></figcaption>
+      </figure>
+      <figure class="gitem" role="button" tabindex="0" data-reveal
+        data-full="https://picsum.photos/seed/hk-g5/1400/1050.jpg" data-cap="Visual experiment — 05">
+        <div class="frame r43" data-pcurve><img src="https://picsum.photos/seed/hk-g5/1200/900.jpg" alt="Visual experiment" loading="lazy"></div>
+        <figcaption class="gcap"><b>05</b><span>Visual experiment</span><span class="garr"><i data-lucide="arrow-up-right"></i></span></figcaption>
+      </figure>
+      <figure class="gitem" role="button" tabindex="0" data-reveal data-delay="0.07"
+        data-full="https://picsum.photos/seed/hk-g6/1200/1600.jpg" data-cap="Portrait — 06">
+        <div class="frame r34" data-pcurve><img src="https://picsum.photos/seed/hk-g6/900/1200.jpg" alt="Artist portrait" loading="lazy"></div>
+        <figcaption class="gcap"><b>06</b><span>Portrait</span><span class="garr"><i data-lucide="arrow-up-right"></i></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOLLOW ================= -->
+<section class="sec" id="follow">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="sh-num">( 05 )</span><span class="sh-tag">Social</span>
+      <span class="sh-line"></span><span class="sh-note">Where it all happens</span>
+    </div>
+    <h2 class="t-xl" data-reveal data-delay="0.06">Follow<br><em>the journey.</em></h2>
+
+    <div class="fl-rows" data-reveal data-delay="0.1">
+      <a class="fl-row" data-link="instagram" target="_blank" rel="noopener">
+        <span class="fl-tag">01 — Instagram</span>
+        <span class="fl-main">
+          <span class="fl-big">@hasaan.kiani</span>
+          <span class="fl-sub">Cover videos, studio fragments and the everyday process.</span>
+        </span>
+        <span class="fl-arr"><i data-lucide="arrow-up-right"></i></span>
+      </a>
+      <a class="fl-row" data-link="spotifySearch" target="_blank" rel="noopener">
+        <span class="fl-tag">02 — Spotify</span>
+        <span class="fl-main">
+          <span class="fl-big">Search "Hasaan Kiani"</span>
+          <span class="fl-sub">Everything I release, in one place. Press play.</span>
+        </span>
+        <span class="fl-arr"><i data-lucide="arrow-up-right"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec sec-alt" id="contact">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="sh-num">( 06 )</span><span class="sh-tag">Contact</span>
+      <span class="sh-line"></span><span class="sh-note">( Say hello )</span>
+    </div>
+    <h2 class="t-xl" data-reveal>Let's create<br><em>something.</em></h2>
+
+    <div class="c-grid">
+      <div class="c-info" data-reveal>
+        <p>Music inquiries, production collaborations, creative projects, booking requests —
+          if it's serious, I want to hear it. Tell me what you're imagining.</p>
+        <div class="c-email">
+          <!-- EDIT: replace with the real contact email (also in CONFIG) -->
+          <a class="c-mail" id="mailLink" href="#">hello@hasaankiani.com</a>
+          <button class="c-copy" id="copyEmail" aria-label="Copy email address"><i data-lucide="copy"></i></button>
+        </div>
+        <ul class="c-meta">
+          <li><i data-lucide="map-pin"></i>Kamra, Pakistan — open to remote work</li>
+          <li><i data-lucide="instagram"></i><a data-link="instagram" target="_blank" rel="noopener">Fastest reply — Instagram DM</a></li>
+          <li><i data-lucide="music-2"></i>Music, production &amp; creative projects</li>
+        </ul>
+      </div>
+
+      <form class="c-form" id="form" novalidate data-reveal data-delay="0.1">
+        <div class="f-row">
+          <div class="field">
+            <label for="cName">Your name</label>
+            <input id="cName" type="text" placeholder="Full name" autocomplete="name">
+            <span class="f-err"></span>
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input id="cEmail" type="email" placeholder="you@example.com" autocomplete="email">
+            <span class="f-err"></span>
+          </div>
+        </div>
+        <div class="field sel">
+          <label for="cType">Inquiry type</label>
+          <select id="cType">
+            <option>Music inquiry</option>
+            <option>Production collaboration</option>
+            <option>Booking request</option>
+            <option>Creative project</option>
+            <option>Something else</option>
+          </select>
+          <span class="sel-ic"><i data-lucide="chevron-down"></i></span>
+        </div>
+        <div class="field">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" rows="4" placeholder="Tell me about the project, the timeline, the idea."></textarea>
+          <span class="f-err"></span>
+        </div>
+        <div class="f-actions">
+          <button type="submit" class="btn btn-solid" id="cSubmit"><span>Send message</span><i data-lucide="send"></i></button>
+        </div>
+
+        <div class="compose" id="compose">
+          <h4>Message ready</h4>
+          <p>This site isn't connected to a mail server yet — so your message has been prepared below.
+            Copy it and send it in one tap via Instagram or email.</p>
+          <div class="compose-btns">
+            <button type="button" class="btn btn-solid btn-sm" id="copyMsg"><i data-lucide="copy"></i> Copy message</button>
+            <a class="btn btn-ghost btn-sm" data-link="igDm" target="_blank" rel="noopener"><i data-lucide="instagram"></i> Send via Instagram</a>
+            <a class="btn btn-ghost btn-sm" id="mailCompose" href="#"><i data-lucide="mail"></i> Send via email</a>
+          </div>
+        </div>
+
+        <p class="f-note2">Note: until this form is connected to an email service, submissions are prepared
+          for you to send directly — nothing is sent automatically, and nothing is stored.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="f-mark" aria-hidden="true">Hasaan Kiani</div>
+    <p class="f-tag">Independent by nature. Music by instinct.</p>
+    <div class="f-links">
+      <a data-link="instagram" target="_blank" rel="noopener">Instagram <i data-lucide="arrow-up-right"></i></a>
+      <a data-link="spotifySearch" target="_blank" rel="noopener">Spotify <i data-lucide="arrow-up-right"></i></a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year">2025</span> Hasaan Kiani — Kamra, Pakistan</span>
+      <button class="f-top" id="toTop">Back to top <i data-lucide="arrow-up"></i></button>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <span class="lb-idx" id="lbIdx">01 / 06</span>
+  <button class="lb-close" id="lbClose" aria-label="Close viewer"><i data-lucide="x"></i></button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous image"><i data-lucide="arrow-left"></i></button>
+  <figure class="lb-fig">
+    <img id="lbImg" src="" alt="">
+    <figcaption class="lb-cap" id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-next" id="lbNext" aria-label="Next image"><i data-lucide="arrow-right"></i></button>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script>
+/* =====================================================================
+   CONFIG — EDIT EVERYTHING HERE
+   ---------------------------------------------------------------------
+   1. spotifyEmbed : paste a real Spotify embed URL when a track/album
+      exists, e.g. "https://open.spotify.com/embed/track/XXXX?utm_source=generator"
+      → the in-page player appears automatically. Leave "" for now.
+   2. releases     : replace these placeholder slots with real songs once
+      released. Set `cover` to an image URL and `spotify`/`youtube` to
+      real links — the LISTEN button uses them automatically.
+   3. contactEmail : replace with the real email address.
+   4. Images       : replace every picsum.photos placeholder with real
+      photos of Hasaan (they are clearly seeded, e.g. hk-hero, hk-portrait).
+===================================================================== */
+const CONFIG = {
+  instagram: "https://www.instagram.com/hasaan.kiani/",
+  igDm: "https://ig.me/m/hasaan.kiani",
+  spotifySearch: "https://open.spotify.com/search/hasaan%20kiani",
+  spotifyEmbed: "", // ← paste embed URL here when available
+  contactEmail: "hello@hasaankiani.com", // ← placeholder — replace with real email
+  releases: [
+    { cat:"HK—001", title:"Untitled — Single", type:"Single", date:"Coming soon", cover:"", spotify:"", youtube:"" },
+    { cat:"HK—002", title:"Untitled — Single", type:"Single", date:"Coming soon", cover:"", spotify:"", youtube:"" },
+    { cat:"HK—003", title:"Untitled — EP",     type:"EP",     date:"Coming soon", cover:"", spotify:"", youtube:"" }
+  ]
+};
+
+const $  = (s,c=document)=>c.querySelector(s);
+const $$ = (s,c=document)=>Array.from(c.querySelectorAll(s));
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE = matchMedia('(pointer:fine)').matches;
+const icons = ()=>{ if(window.lucide) lucide.createIcons(); };
+
+/* ---------- Wire config links into every [data-link] ---------- */
+ $$('[data-link]').forEach(a=>{ const k=a.dataset.link; if(CONFIG[k]) a.href=CONFIG[k]; });
+
+/* ---------- Marquee ---------- */
+(function(){
+  const track=$('#mqTrack'); if(!track) return;
+  const items=['Independent by nature','Music by instinct','Hasaan Kiani','Written · Produced · Released'];
+  const seq=items.map(w=>`<span class="mq-item">${w}</span><span class="mq-dot"></span>`).join('').repeat(3);
+  track.innerHTML=`<div class="mq-group">${seq}</div><div class="mq-group">${seq}</div>`;
+})();
+
+/* ---------- Releases (from CONFIG) ---------- */
+function coverSVG(cat){
+  let grooves='';
+  for(let r=168;r>72;r-=13) grooves+=`<circle cx="200" cy="200" r="${r}" stroke="rgba(237,235,230,.07)" fill="none"/>`;
+  /* FIX: sirf vinyl (grooves + label) rotate hota hai — text static rehta hai */
+  return `<svg viewBox="0 0 400 400" role="img" aria-label="${cat} — placeholder cover artwork">
+    <rect width="400" height="400" fill="#0B0B0B"/>
+    <g class="vinyl">${grooves}
+      <circle cx="200" cy="200" r="64" fill="#101010" stroke="rgba(237,235,230,.2)"/>
+      <circle cx="200" cy="200" r="5" fill="#C2402D"/>
+    </g>
+    <text x="200" y="52" text-anchor="middle" fill="#6E6A63" font-family="Manrope,sans-serif" font-size="13" font-weight="700" style="letter-spacing:.4em">${cat}</text>
+    <text x="200" y="360" text-anchor="middle" fill="#4A4741" font-family="Manrope,sans-serif" font-size="11" font-weight="700" style="letter-spacing:.45em">HASAAN KIANI</text>
+  </svg>`;
+}
+(function buildReleases(){
+  const grid=$('#relGrid'); if(!grid) return;
+  grid.innerHTML=CONFIG.releases.map((r,i)=>{
+    /* FIX: robust cover fallback — SVG vinyl base layer, real cover upar;
+       image fail ho to khud remove ho jati hai, broken-icon kabhi nahi aata */
+    const cover = r.cover
+      ? `${coverSVG(r.cat)}<img class="rc-img" src="${r.cover}" alt="${r.title} — cover artwork" loading="lazy" onerror="this.remove()">`
+      : coverSVG(r.cat);
+    const yt = r.youtube
+      ? `<a class="rc-yt" href="${r.youtube}" target="_blank" rel="noopener" aria-label="Watch on YouTube"><i data-lucide="play"></i></a>` : '';
+    const link = r.spotify || CONFIG.spotifySearch;
+    return `<article class="rcard" data-reveal data-delay="${(i*0.07).toFixed(2)}">
+      <div class="rc-cover">${cover}</div>
+      <div class="rc-body">
+        <span class="rc-cat">${r.cat}</span>
+        <h3 class="rc-title">${r.title}</h3>
+        <span class="rc-meta">${r.type} · ${r.date}</span>
+        <div class="rc-actions">
+          <a class="rc-listen" href="${link}" target="_blank" rel="noopener">Listen <i data-lucide="arrow-up-right"></i></a>
+          ${yt}
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+})();
+
+/* ---------- Spotify embed slot (appears when configured) ---------- */
+if(CONFIG.spotifyEmbed){
+  $('#lpSlot').innerHTML=`<div class="lp-embed">
+    <iframe src="${CONFIG.spotifyEmbed}" height="232" loading="lazy" style="border:0;width:100%"
+      allow="encrypted-media; clipboard-write" title="Spotify player — Hasaan Kiani"></iframe></div>`;
+}
+
+/* ---------- Global image fallbacks (dark HK plate) ---------- */
+const FALLBACK='data:image/svg+xml,'+encodeURIComponent(
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#101010"/><text x="400" y="330" font-family="Georgia,serif" font-size="140" font-style="italic" fill="#262626" text-anchor="middle">HK</text></svg>`);
+ $$('img').forEach(im=>im.addEventListener('error',()=>{ im.src=FALLBACK; },{once:true}));
+
+/* ---------- Hero letters : build + entrance + proximity swell ---------- */
+ $$('.hn-word').forEach((word,li)=>{
+  const chars=[...word.textContent]; word.textContent='';
+  chars.forEach((c,i)=>{
+    const ch=document.createElement('span'); ch.className='hn-ch'; ch.textContent=c;
+    ch.style.setProperty('--d',(0.25+li*0.28+i*0.05)+'s');
+    word.appendChild(ch);
+  });
+});
+/* FIX: proximity effect — snappy transition, sirf fine-pointer + motion par */
+if(FINE&&!RM){
+  const hero=$('.hero'), letters=$$('.hn-ch');
+  let mx=-1,my=-1,raf=null;
+  const tick=()=>{
+    raf=null;
+    for(const el of letters){
+      const r=el.getBoundingClientRect();
+      if(!r.width) continue;
+      const d=Math.hypot(mx-(r.left+r.width/2),my-(r.top+r.height/2));
+      let f=Math.max(0,1-d/240); f=f*f*(3-2*f);
+      el.style.fontVariationSettings=`'wght' ${Math.round(620+280*f)},'wdth' ${Math.round(78+34*f)}`;
+    }
+  };
+  hero.addEventListener('mousemove',e=>{
+    mx=e.clientX; my=e.clientY;
+    if(!raf) raf=requestAnimationFrame(tick);
+  });
+  hero.addEventListener('mouseleave',()=>{
+    letters.forEach(el=>el.style.removeProperty('font-variation-settings'));
+  });
+}
+
+/* ---------- Word-split reveal for ledes ---------- */
+ $$('[data-words]').forEach(el=>{
+  const nodes=Array.from(el.childNodes); el.textContent=''; let i=0;
+  const add=(txt,em)=>{
+    const w=document.createElement('span'); w.className='w';
+    const inner=document.createElement('span'); inner.className='wi'+(em?' em':'');
+    inner.textContent=txt; inner.style.transitionDelay=(i*0.028)+'s'; i++;
+    w.appendChild(inner); el.appendChild(w); el.appendChild(document.createTextNode(' '));
+  };
+  nodes.forEach(n=>{
+    if(n.nodeType===Node.TEXT_NODE){ n.textContent.split(/\s+/).filter(Boolean).forEach(t=>add(t,false)); }
+    else if(n.nodeType===Node.ELEMENT_NODE){ add(n.textContent.trim(),true); }
+  });
+});
+
+/* ---------- Preloader ---------- */
+const pre=$('#preloader'), preCount=$('#preCount'), preBar=$('#preBar');
+function finishLoad(){
+  pre.classList.add('done');
+  document.body.classList.add('loaded');
+  document.body.classList.remove('lock');
+  setTimeout(()=>pre.remove(),1300);
+}
+if(RM){ finishLoad(); }
+else{
+  const DUR=1400; let t0=performance.now();
+  (function step(now){
+    const p=Math.min(1,(now-t0)/DUR), e=1-Math.pow(1-p,3);
+    preCount.textContent=String(Math.round(e*100)).padStart(2,'0');
+    preBar.style.transform=`scaleX(${e})`;
+    if(p<1) requestAnimationFrame(step); else setTimeout(finishLoad,200);
+  })(t0);
+}
+
+/* ---------- Scroll reveals ---------- */
+const revObs=new IntersectionObserver(es=>{
+  es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in-view'); revObs.unobserve(en.target); } });
+},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+ $$('[data-reveal],[data-words],[data-pcurve]').forEach(el=>{
+  if(el.dataset.delay) el.style.transitionDelay=el.dataset.delay+'s';
+  revObs.observe(el);
+});
+
+/* ---------- Parallax + progress bar ---------- */
+const progressEl=$('#progress');
+const pEls=$$('[data-parallax]').map(el=>({el,img:el.querySelector('img'),sp:parseFloat(el.dataset.parallax)||.09}));
+function onScroll(){
+  const doc=document.documentElement, max=doc.scrollHeight-innerHeight;
+  progressEl.style.transform=`scaleX(${max>0?(doc.scrollTop/max).toFixed(4):0})`;
+  if(RM) return;
+  const vh=innerHeight;
+  pEls.forEach(o=>{
+    const r=o.el.getBoundingClientRect();
+    if(r.bottom<-80||r.top>vh+80) return;
+    const off=(r.top+r.height/2-vh/2)*o.sp;
+    o.img.style.transform=`translate3d(0,${off.toFixed(1)}px,0) scale(1.14)`;
+  });
+}
+let sTick=false;
+addEventListener('scroll',()=>{ if(!sTick){ sTick=true; requestAnimationFrame(()=>{ onScroll(); sTick=false; }); } },{passive:true});
+addEventListener('resize',onScroll); onScroll();
+
+/* ---------- Nav : scrolled state + scrollspy ---------- */
+const nav=$('#nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50),{passive:true});
+const spyLinks=$$('.nav-links a');
+const spyMap=new Map(spyLinks.map(a=>[a.getAttribute('href').slice(1),a]));
+const spyObs=new IntersectionObserver(es=>{
+  es.forEach(en=>{
+    if(en.isIntersecting){
+      spyLinks.forEach(a=>a.classList.remove('active'));
+      const a=spyMap.get(en.target.id); if(a) a.classList.add('active');
+    }
+  });
+},{rootMargin:'-40% 0px -55% 0px'});
+['music','about','process','gallery','contact'].forEach(id=>{
+  const s=document.getElementById(id); if(s) spyObs.observe(s);
+});
+
+/* ---------- Mobile menu ---------- */
+const mmenu=$('#mmenu');
+ $('#burger').addEventListener('click',()=>{ mmenu.classList.add('open'); mmenu.setAttribute('aria-hidden','false'); document.body.classList.add('lock'); });
+function closeMenu(){ mmenu.classList.remove('open'); mmenu.setAttribute('aria-hidden','true'); document.body.classList.remove('lock'); }
+ $('#mmClose').addEventListener('click',closeMenu);
+ $$('.mm-links a').forEach(a=>a.addEventListener('click',closeMenu));
+matchMedia('(min-width:901px)').addEventListener('change',e=>{ if(e.matches) closeMenu(); });
+
+/* ---------- Waveform (decorative idle visualiser — honest, no fake playback) ---------- */
+(function(){
+  const cv=$('#wave'); if(!cv) return;
+  const ctx=cv.getContext('2d');
+  const N=110, seeds=Array.from({length:N},(_,i)=>{ const x=Math.sin(i*12.9898)*43758.5453; return x-Math.floor(x); });
+  let W=0,H=0,mx=null,running=false,raf=null;
+  function size(){
+    const r=cv.parentElement.getBoundingClientRect(); if(!r.width) return;
+    const dpr=Math.min(2,devicePixelRatio||1);
+    cv.width=r.width*dpr; cv.height=r.height*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0); W=r.width; H=r.height;
+    if(RM) draw(0);
+  }
+  function draw(t){
+    ctx.clearRect(0,0,W,H);
+    const mid=H/2, bw=W/N;
+    for(let i=0;i<N;i++){
+      const x=i*bw, n=i/(N-1);
+      const env=.22+.78*Math.pow(Math.sin(n*Math.PI),.8);
+      const wob=.55+.45*Math.sin(t*.0016+i*.34);
+      let f=0;
+      if(mx!=null){ f=Math.max(0,1-Math.abs(x+bw/2-mx)/140); }
+      const amp=(seeds[i]*.7+.3)*env*wob*(.6+.85*f);
+      const bh=Math.max(2,amp*H*.92);
+      ctx.fillStyle = f>.12 ? `rgba(194,64,45,${.4+.6*f})` : 'rgba(237,235,230,.3)';
+      ctx.fillRect(x,mid-bh/2,Math.max(1.5,bw*.5),bh);
+    }
+  }
+  function loop(t){ if(!running) return; draw(t); raf=requestAnimationFrame(loop); }
+  cv.addEventListener('mousemove',e=>{ const r=cv.getBoundingClientRect(); mx=e.clientX-r.left; });
+  cv.addEventListener('mouseleave',()=>{ mx=null; });
+  new IntersectionObserver(es=>{
+    es.forEach(en=>{
+      if(RM) return;
+      if(en.isIntersecting&&!running){ running=true; raf=requestAnimationFrame(loop); }
+      else if(!en.isIntersecting&&running){ running=false; cancelAnimationFrame(raf); }
+    });
+  }).observe(cv);
+  addEventListener('resize',size); size();
+})();
+
+/* ---------- Process : interactive stages + keyboard support ---------- */
+(function(){
+  const tabs=$$('.proc-tab'), imgs=$$('.pv-stage img');
+  const pvNum=$('#pvNum'), pvName=$('#pvName'), procIdx=$('#procIdx');
+  const names=['The Idea','Writing','Production','The Final Sound'];
+  function setStage(i,focusTab){
+    tabs.forEach((t,k)=>{
+      t.classList.toggle('active',k===i);
+      t.setAttribute('aria-selected',k===i?'true':'false');
+      t.setAttribute('tabindex',k===i?'0':'-1');
+    });
+    imgs.forEach((im,k)=>im.classList.toggle('active',k===i));
+    pvNum.textContent=String(i+1).padStart(2,'0');
+    pvName.textContent=names[i];
+    procIdx.textContent=String(i+1).padStart(2,'0');
+    if(focusTab) tabs[i].focus();
+  }
+  tabs.forEach((t,i)=>t.addEventListener('click',()=>setStage(i)));
+  /* FIX: arrow-key navigation for tabs (a11y) */
+  $('#procList').addEventListener('keydown',e=>{
+    const curIdx=tabs.indexOf(document.activeElement);
+    if(curIdx<0) return;
+    let next=null;
+    if(e.key==='ArrowDown'||e.key==='ArrowRight') next=(curIdx+1)%tabs.length;
+    if(e.key==='ArrowUp'||e.key==='ArrowLeft') next=(curIdx-1+tabs.length)%tabs.length;
+    if(next!==null){ e.preventDefault(); setStage(next,true); }
+  });
+  setStage(0);
+})();
+
+/* ---------- Lightbox ---------- */
+const items=$$('.gitem'), lb=$('#lightbox'), lbImg=$('#lbImg'), lbCap=$('#lbCap'), lbIdx=$('#lbIdx');
+let cur=0, lbOpen=false, lastFocus=null;
+lbImg.addEventListener('load',()=>lbImg.classList.remove('is-loading'));
+function openLb(i){
+  cur=(i+items.length)%items.length;
+  const it=items[cur];
+  lbImg.classList.add('is-loading');
+  lbImg.src=it.dataset.full; lbImg.alt=it.dataset.cap;
+  lbCap.textContent=it.dataset.cap;
+  lbIdx.textContent=`${String(cur+1).padStart(2,'0')} / ${String(items.length).padStart(2,'0')}`;
+  lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+  document.body.classList.add('lock'); lbOpen=true;
+  lastFocus=document.activeElement; $('#lbClose').focus();
+}
+function closeLb(){
+  lb.classList.remove('open'); lb.setAttribute('aria-hidden','true');
+  document.body.classList.remove('lock'); lbOpen=false;
+  if(lastFocus) lastFocus.focus();
+}
+items.forEach((it,i)=>{
+  it.addEventListener('click',()=>openLb(i));
+  it.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLb(i); } });
+});
+ $('#lbClose').addEventListener('click',closeLb);
+ $('#lbPrev').addEventListener('click',()=>openLb(cur-1));
+ $('#lbNext').addEventListener('click',()=>openLb(cur+1));
+lb.addEventListener('click',e=>{ if(e.target===lb) closeLb(); });
+addEventListener('keydown',e=>{
+  if(e.key==='Escape'){ if(lbOpen) closeLb(); else if(mmenu.classList.contains('open')) closeMenu(); }
+  if(lbOpen){ if(e.key==='ArrowRight') openLb(cur+1); if(e.key==='ArrowLeft') openLb(cur-1); }
+});
+
+/* ---------- Toasts ---------- */
+function toast(msg,icon='check'){
+  const t=document.createElement('div'); t.className='toast';
+  t.innerHTML=`<i data-lucide="${icon}"></i><span>${msg}</span>`;
+  $('#toasts').appendChild(t); icons();
+  requestAnimationFrame(()=>t.classList.add('show'));
+  setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=>t.remove(),450); },3800);
+}
+
+/* ---------- Contact form : validation + honest compose flow ---------- */
+const form=$('#form'), compose=$('#compose');
+function setErr(input,msg){
+  const f=input.closest('.field');
+  f.classList.toggle('invalid',!!msg);
+  $('.f-err',f).textContent=msg||'';
+  return !msg;
+}
+ $$('#form input, #form textarea').forEach(i=>i.addEventListener('input',()=>{
+  i.closest('.field').classList.remove('invalid'); $('.f-err',i.closest('.field')).textContent='';
+}));
+function composedText(){
+  return `Hi Hasaan —\n\nName: ${$('#cName').value.trim()}\nEmail: ${$('#cEmail').value.trim()}\nInquiry: ${$('#cType').value}\n\n${$('#cMsg').value.trim()}`;
+}
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=$('#cName'), email=$('#cEmail'), msg=$('#cMsg');
+  let ok=true;
+  ok=setErr(name, name.value.trim().length<2?'Please tell me your name.':'')&&ok;
+  ok=setErr(email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())?'':'That email doesn\u2019t look right.')&&ok;
+  ok=setErr(msg, msg.value.trim().length<10?'A few more words, please — what\u2019s the idea?':'')&&ok;
+  if(!ok){ toast('Please check the highlighted fields.','info'); return; }
+  $('#mailCompose').href=`mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent('['+$('#cType').value+'] — website inquiry')}&body=${encodeURIComponent(composedText())}`;
+  compose.classList.add('show');
+  compose.scrollIntoView({behavior:RM?'auto':'smooth',block:'nearest'});
+  toast('Message ready — send it via Instagram or email.','check');
+});
+ $('#copyMsg').addEventListener('click',async()=>{
+  try{ await navigator.clipboard.writeText(composedText()); toast('Message copied to clipboard.','check'); }
+  catch{ toast('Copy failed — please copy the text manually.','info'); }
+});
+
+/* ---------- Email copy + small things ---------- */
+ $('#copyEmail').addEventListener('click',async()=>{
+  try{ await navigator.clipboard.writeText(CONFIG.contactEmail); toast('Email copied to clipboard.','check'); }
+  catch{ toast(CONFIG.contactEmail,'mail'); }
+});
+ $('#toTop').addEventListener('click',()=>scrollTo({top:0,behavior:RM?'auto':'smooth'}));
+ $('#year').textContent=new Date().getFullYear();
+ $('#mailLink').href=`mailto:${CONFIG.contactEmail}`;
+ $('#mailLink').textContent=CONFIG.contactEmail;
+
+icons();
+</script>
+
+<noscript><style>
+  body{overflow:auto!important}.preloader{display:none}
+  [data-reveal],[data-words],.h-top,.h-head,.h-sub,.h-actions,.h-scroll{opacity:1!important;transform:none!important}
+  .wi,.hn-ch{transform:none!important}[data-pcurve]{clip-path:none!important}
+  .frame img{transform:none!important}
+</style></noscript>
+</body>
+</html>
